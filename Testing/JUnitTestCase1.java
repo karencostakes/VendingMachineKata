@@ -17,7 +17,7 @@ public class JUnitTestCase1 {
 	@Test
 	public void whenInValidCoinInsertedMachineRejectsCoin() {
 		Coin coin1 = new Coin ();
-		assertEquals("This is not a nickle", coin1.insertCoinIntoVending(.75, 2.50));
+		assertEquals("We do not accept pennies or coins other than dimes, nickles, and quarters", coin1.insertCoinIntoVending(.75, 2.50));
 		
 	
 	}
