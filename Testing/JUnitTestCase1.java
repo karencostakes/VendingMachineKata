@@ -37,6 +37,14 @@ public class JUnitTestCase1 {
 	
 	}
 	
+	@Test
+	public void cokeIsSelected() {
+		ProductSelection productSelection1 = new ProductSelection ();
+		assertEquals("Here's your ice cold coke", productSelection1.iWantACoke(1.00));
+		
+	
+	}
+	
 		
 	}
 
