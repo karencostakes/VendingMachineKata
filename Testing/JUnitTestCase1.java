@@ -38,9 +38,24 @@ public class JUnitTestCase1 {
 	}
 	
 	@Test
-	public void cokeIsSelected() {
+	public void cokeIsSelectedWithExactChange() {
 		ProductSelection productSelection1 = new ProductSelection ();
 		assertEquals("Here's your ice cold coke", productSelection1.iWantACoke(1.00));
+		
+	
+	}
+	@Test
+	public void cokeIsSelectedWithExcess() {
+		ProductSelection productSelection1 = new ProductSelection ();
+		assertEquals("Here's your ice cold coke", productSelection1.iWantACoke(1.15));
+		
+	
+	}
+	
+	@Test
+	public void cokeIsSelectedWithNotEnoughChange() {
+		ProductSelection productSelection1 = new ProductSelection ();
+		assertEquals("Please enter additional change", productSelection1.iWantACoke(.90));
 		
 	
 	}
