@@ -20,7 +20,13 @@ public class JUnitTestCase1 {
 		Coin coin1 = new Coin ();
 		assertEquals("10", coin1.insertCoinIntoVending(.71, 2.27));
 		
+	}
 	
+	@Test
+	public void whenQuarterIsInsertedMachineStoresCoin() {
+		Coin coin1 = new Coin ();
+		assertEquals("25", coin1.insertCoinIntoVending(.96, 5.67));
+		
 	}
 	
 	@Test
