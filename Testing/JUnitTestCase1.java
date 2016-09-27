@@ -111,12 +111,21 @@ public class JUnitTestCase1 {
 	}
 	
 	@Test
-	public void changeToUser() {
+	public void changeToUserWhenNoChange() {
 		MakingChange makingChange1 = new MakingChange ();
-		assertEquals("There is no change to return", makingChange1.makeChange(1.00, 1.05));
-		
+		assertEquals("There is no change to return", makingChange1.makeChange(1.00, 1.05));	
 	
 	}
+	
+	@Test
+	public void changeToUserWhenChange() {
+		MakingChange makingChange1 = new MakingChange ();
+		assertEquals("0.5", makingChange1.makeChange(1.00, .50));	
+	
+	}
+	
+	
+	
 	
 	
 	
