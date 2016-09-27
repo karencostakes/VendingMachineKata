@@ -21,7 +21,7 @@ public class ProductSelection {
 	
 	public String iWantChips(double insertedChange) {
 		// TODO Auto-generated method stub
-		if (insertedChange>= 1.00) 
+		if (insertedChange>= .50) 
 			return "Here's your chips";
 		return "Please enter additional change";
 	}

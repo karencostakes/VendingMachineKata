@@ -83,6 +83,35 @@ public class JUnitTestCase1 {
 	
 	}
 	
+
+
+	
+	@Test
+	public void chipsAreSelectedWithExcess() {
+		ProductSelection productSelection1 = new ProductSelection ();
+		assertEquals("Here's your chips", productSelection1.iWantChips(1.50));
+		
+	
+	}
+	
+	@Test
+	public void chipsAreSelectedWithExactChange() {
+		ProductSelection productSelection1 = new ProductSelection ();
+		assertEquals("Here's your chips", productSelection1.iWantChips(.50));
+		
+	
+	}
+	
+	@Test
+	public void chipsAreSelectedWithNotEnoughChange() {
+		ProductSelection productSelection1 = new ProductSelection ();
+		assertEquals("Please enter additional change", productSelection1.iWantChips(.25));
+		
+	
+	}
+	
+	
+	
 	
 		
 	}
