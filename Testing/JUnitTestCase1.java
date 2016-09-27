@@ -110,6 +110,15 @@ public class JUnitTestCase1 {
 	
 	}
 	
+	@Test
+	public void changeToUser() {
+		MakingChange makingChange1 = new MakingChange ();
+		assertEquals("There is no change to return", makingChange1.makeChange(1.00, 1.05));
+		
+	
+	}
+	
+	
 	
 	
 	
