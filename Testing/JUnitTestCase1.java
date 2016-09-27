@@ -60,6 +60,30 @@ public class JUnitTestCase1 {
 	
 	}
 	
+	@Test
+	public void candyIsSelectedWithExactChange() {
+		ProductSelection productSelection1 = new ProductSelection ();
+		assertEquals("Here's your candy", productSelection1.iWantCandy(.65));
+		
+	
+	}
+	@Test
+	public void candyIsSelectedWithExcess() {
+		ProductSelection productSelection1 = new ProductSelection ();
+		assertEquals("Here's your candy", productSelection1.iWantCandy(1.15));
+		
+	
+	}
+	
+	@Test
+	public void candyIsSelectedWithNotEnoughChange() {
+		ProductSelection productSelection1 = new ProductSelection ();
+		assertEquals("Please enter additional change", productSelection1.iWantCandy(.25));
+		
+	
+	}
+	
+	
 		
 	}
 
