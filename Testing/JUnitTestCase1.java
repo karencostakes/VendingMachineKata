@@ -40,14 +40,14 @@ public class JUnitTestCase1 {
 	@Test
 	public void cokeIsSelectedWithExactChange() {
 		ProductSelection productSelection1 = new ProductSelection ();
-		assertEquals("Here's your ice cold coke", productSelection1.iWantACoke(1.00));
+		assertEquals("Thank You!", productSelection1.iWantACoke(1.00));
 		
 	
 	}
 	@Test
 	public void cokeIsSelectedWithExcess() {
 		ProductSelection productSelection1 = new ProductSelection ();
-		assertEquals("Here's your ice cold coke", productSelection1.iWantACoke(1.15));
+		assertEquals("Thank You!", productSelection1.iWantACoke(1.15));
 		
 	
 	}
@@ -55,7 +55,7 @@ public class JUnitTestCase1 {
 	@Test
 	public void cokeIsSelectedWithNotEnoughChange() {
 		ProductSelection productSelection1 = new ProductSelection ();
-		assertEquals("Please enter additional change", productSelection1.iWantACoke(.90));
+		assertEquals("Price: $1.00", productSelection1.iWantACoke(.90));
 		
 	
 	}
@@ -63,14 +63,14 @@ public class JUnitTestCase1 {
 	@Test
 	public void candyIsSelectedWithExactChange() {
 		ProductSelection productSelection1 = new ProductSelection ();
-		assertEquals("Here's your candy", productSelection1.iWantCandy(.65));
+		assertEquals("Thank You!", productSelection1.iWantCandy(.65));
 		
 	
 	}
 	@Test
 	public void candyIsSelectedWithExcess() {
 		ProductSelection productSelection1 = new ProductSelection ();
-		assertEquals("Here's your candy", productSelection1.iWantCandy(1.15));
+		assertEquals("Thank You!", productSelection1.iWantCandy(1.15));
 		
 	
 	}
@@ -78,7 +78,7 @@ public class JUnitTestCase1 {
 	@Test
 	public void candyIsSelectedWithNotEnoughChange() {
 		ProductSelection productSelection1 = new ProductSelection ();
-		assertEquals("Please enter additional change", productSelection1.iWantCandy(.25));
+		assertEquals("Price: $.65", productSelection1.iWantCandy(.25));
 		
 	
 	}
@@ -89,7 +89,7 @@ public class JUnitTestCase1 {
 	@Test
 	public void chipsAreSelectedWithExcess() {
 		ProductSelection productSelection1 = new ProductSelection ();
-		assertEquals("Here's your chips", productSelection1.iWantChips(1.50));
+		assertEquals("Thank You!", productSelection1.iWantChips(1.50));
 		
 	
 	}
@@ -97,7 +97,7 @@ public class JUnitTestCase1 {
 	@Test
 	public void chipsAreSelectedWithExactChange() {
 		ProductSelection productSelection1 = new ProductSelection ();
-		assertEquals("Here's your chips", productSelection1.iWantChips(.50));
+		assertEquals("Thank You!", productSelection1.iWantChips(.50));
 		
 	
 	}
@@ -105,7 +105,7 @@ public class JUnitTestCase1 {
 	@Test
 	public void chipsAreSelectedWithNotEnoughChange() {
 		ProductSelection productSelection1 = new ProductSelection ();
-		assertEquals("Please enter additional change", productSelection1.iWantChips(.25));
+		assertEquals("Price: $.50", productSelection1.iWantChips(.25));
 		
 	
 	}
